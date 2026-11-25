@@ -1,0 +1,16 @@
+25-Nov-2026 15:09:40 | INFO    | Your Klayout version is: KLayout 0.30.14 (required >= 0.30.5)
+25-Nov-2026 15:09:40 | INFO    | Running SG13G2 LVS checks on design /foss/designs/entrega/IHP__OPA0316/release/v.1.0.0/gds/OPA0316.gds on cell OPA0316
+25-Nov-2026 15:12:02 | INFO    | ==============================================================================
+25-Nov-2026 15:12:02 | INFO    | Important Summary
+25-Nov-2026 15:12:02 | INFO    | +------------------+--------------------------------------------------------------+
+25-Nov-2026 15:12:02 | INFO    | | Status           | PASS                                                         |
+25-Nov-2026 15:12:02 | INFO    | | Mode             | COMPARE                                                      |
+25-Nov-2026 15:12:02 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                      |
+25-Nov-2026 15:12:02 | INFO    | | Layout           | OPA0316.gds                                                  |
+25-Nov-2026 15:12:02 | INFO    | | Top Cell         | OPA0316                                                      |
+25-Nov-2026 15:12:02 | INFO    | | Results Dir      | /foss/designs/lvs_rel38                                      |
+25-Nov-2026 15:12:02 | INFO    | | Warnings         | 0                                                            |
+25-Nov-2026 15:12:02 | INFO    | | Errors           | 0                                                            |
+25-Nov-2026 15:12:02 | INFO    | | Run Time (s)     | 141.911                                                      |
+25-Nov-2026 15:12:02 | INFO    | +------------------+--------------------------------------------------------------+
+25-Nov-2026 15:12:02 | INFO    | ==============================================================================

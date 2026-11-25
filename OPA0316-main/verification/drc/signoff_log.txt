@@ -1,0 +1,30 @@
+=== 1) relleno de Activ fuera de los pozos N ===
+ACTIV_RELLENO formas: 19173; dentro o junto a NWell: 97; quedan: 19076
+DENSIDAD Activ: 50.4 %
+ESCRITO unse316_chip_final_v4.gds
+=== 2a) DRC completo con densidad ===
+Number of DRC errors for maximum rule set: 0
+25-Nov-2026 12:46:18 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+errores DRC: 0 {}
+=== 2b) DRC minimo de precheck ===
+25-Nov-2026 12:47:18 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+=== 3) LVS del archivo final (opciones por defecto de IHP) ===
+25-Nov-2026 12:49:36 | INFO    | | Status           | PASS                                                         |
+25-Nov-2026 12:49:36 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                      |
+LAYOUT [('unse316_chip', 206, 0)]
+ESQUEMA [('UNSE316_CHIP', 206, 0)]
+PAR unse316_chip UNSE316_CHIP Match
+=== 4) conv2sub.py de IHP ===
+ARCHIVO 
+## Submission processing
+
+The designs were processed internally using two scripts: `conv2sub.py` and `zerp.py`.
+
+- `conv2sub.py` ensures that the correct options are set when saving the final GDS.
+- `zerp.py` removes zero-area polygons.
+
+To detect zero-area polygons in KLayout, move the `zero_poly.lydrc` macro to
+`$PDK_ROOT/$PDK/libs.tech/klayout/tech/macros`, then restart KLayout.
+
+After restarting, an additional menu item becomes available. Once executed, the
+zero-area polygons appear in the Marker Browser.

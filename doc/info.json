@@ -1,0 +1,26 @@
+{
+  "name": "OPA0316",
+  "design_type": "A",
+  "technology": "IHP",
+  "unique_id": "0316",
+  "license": "Apache-2.0",
+  "trl": 4,
+  "sealring_x": 1.377,
+  "sealring_y": 0.98,
+  "repository": "https://github.com/moscatellilucas/IHP__OPA0316",
+  "pdk_version": "",
+  "process": "SG13G2",
+  "dependencies": {},
+  "tools": {
+    "klayout": "KLayout 0.30.14",
+    "ngspice": "ngspice-47 : Circuit level simulation program",
+    "environment": "IIC-OSIC-TOOLS"
+  },
+  "top_cell_name": "OPA0316",
+  "release": {
+    "version": "v.1.0.0",
+    "gds": "release/v.1.0.0/gds/OPA0316.gds",
+    "netlist": "release/v.1.0.0/netlist/OPA0316.spice",
+    "doc": "release/v.1.0.0/doc"
+  }
+}

@@ -1,0 +1,285 @@
+* =====================================================================
+*  Chip frente analogico de ECG - Etapas 1 + 2 (CHIP v1.2: + capacitores de desacople en los nodos de polarizacion)
+*  Proceso: IHP SG13G2, transistores de 3,3 V (sg13_hv)
+*  Autor: Lucas Moscatelli (UNSE)
+*
+*  Etapa 1: amplificador de entrada (ecg_lna v0.4), ganancia x100
+*  Etapa 2: filtro pasabanda con ganancia x5 (inversora)
+*    Ganancia      = C1/C2 = 5 capacitores unitarios / 1 unitario
+*    Corte inferior= pseudo-resistor con C2  (~0,1-0,3 Hz, por debajo
+*                    del de la etapa 1, asi no se suman)
+*    Corte superior= beta*gm/(2*pi*CL) ~ 150 Hz, con OTA de ~8 nA
+*  Ganancia total ~ x500 (54 dB): 5 mV de ECG -> 2,5 V pico a pico
+*  Salida: out2 (centrada en vref = 1,65 V, invertida respecto de la entrada)
+*  Reset: pin rst en alto (3,3 V) unos ms al encender -> el chip queda listo enseguida
+* =====================================================================
+
+* ---- Modelos del PDK de IHP (ruta dentro de IIC-OSIC-TOOLS) ----
+*  Cambios v0.2: sumideros NMOS, espejos de polarizacion y carga PMOS con
+*  4x mas area (mismo W/L) y par de entrada con el doble de area,
+*  para bajar el ruido 1/f (v0.1 dio 8,0 uVrms de 0,5 a 150 Hz).
+*  Cambio v0.4: pseudo-resistor W=1u L=4u (barrido de 4 tamanos x 5 corners).
+*  Resultado: polarizacion correcta en todos los corners de 0 a 50 C,
+*  corte inferior 0,39-0,97 Hz, ruido 3,98-4,86 uVrms, CMRR ~117 dB.
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOShv.lib mos___CORNER__
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+
+* =====================================================================
+*  Pseudo-resistor: dos PMOS en serie, cada uno conectado como diodo.
+*  Da una resistencia enorme (1e11 a 1e13 ohm) con muy poca area.
+* =====================================================================
+.subckt pseudor a b
+XMa mid mid a a sg13_hv_pmos w=1u l=4u ng=1 m=1
+XMb mid mid b b sg13_hv_pmos w=1u l=4u ng=1 m=1
+.ends pseudor
+
+* Pseudo-resistor de 4 tramos en serie para la etapa 2: cada tramo soporta
+* solo 1/4 de la excursion de salida y no entra en conduccion
+.subckt pseudor4 a b
+XP1 a  m1 pseudor
+XP2 m1 m2 pseudor
+XP3 m2 m3 pseudor
+XP4 m3 b  pseudor
+.ends pseudor4
+
+* Llave de reset en "T" sin fugas ni recorte:
+*  MA (pozo a vref) toca el nodo sensible; MB (pozo a vdd) toca la salida que se mueve;
+*  MC mantiene el punto medio en vref cuando la llave esta abierta (rst en bajo).
+.subckt llave_t sens sal vref vdd rst rstb
+XMA sens rstb mid  vref sg13_hv_pmos w=1u l=1u ng=1 m=1
+XMB mid  rstb sal  vdd  sg13_hv_pmos w=1u l=1u ng=1 m=1
+XMC mid  rst  vref vref sg13_hv_pmos w=1u l=1u ng=1 m=1
+.ends llave_t
+
+* =====================================================================
+*  OTA folded cascode con entrada PMOS (bajo ruido 1/f)
+*  vp = entrada no inversora, vm = entrada inversora
+*  iref = corriente de referencia de 1 uA (entra desde afuera)
+* =====================================================================
+.subckt ota_fc vp vm out vdd vss iref
+
+* --- Polarizacion ---
+XMBN1_1 iref iref MBN1_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBN1_2 MBN1_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBN2_1 pb iref MBN2_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBN2_2 MBN2_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBP1 pb   pb   vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+* tension de cascoda NMOS (transistor largo = Vgs mayor)
+XMBP2 vbn2 pb   vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XMBN3_1 vbn2 vbn2 MBN3_s1 vss sg13_hv_nmos w=1u l=10u ng=1 m=1
+XMBN3_2 MBN3_s1 vbn2 vss vss sg13_hv_nmos w=1u l=10u ng=1 m=1
+* tension de cascoda PMOS
+XMBN4_1 vbp2 iref MBN4_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBN4_2 MBN4_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBP3_1 vbp2 vbp2 MBP3_s1 vdd sg13_hv_pmos w=1u l=10u ng=1 m=1
+XMBP3_2 MBP3_s1 vbp2 vdd vdd sg13_hv_pmos w=1u l=10u ng=1 m=1
+
+* --- Fuente de cola: 2 uA ---
+XM0  tail pb   vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=2
+
+* --- Par de entrada PMOS grande (inversion debil, bajo ruido) ---
+XM1 f1 vp tail tail sg13_hv_pmos w=20u l=2u ng=2 m=20
+XM2 f2 vm tail tail sg13_hv_pmos w=20u l=2u ng=2 m=20
+
+* --- Sumideros NMOS del plegado: 2 uA cada uno ---
+XM3_1 f1 iref M3_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=2
+XM3_2 M3_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=2
+XM4_1 f2 iref M4_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=2
+XM4_2 M4_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=2
+
+* --- Cascodas NMOS ---
+XM5  x1   vbn2 f1 vss sg13_hv_nmos w=2u l=2u ng=1 m=1
+XM6  out  vbn2 f2 vss sg13_hv_nmos w=2u l=2u ng=1 m=1
+
+* --- Espejo cascodo PMOS de salida (wide-swing) ---
+XM7_1 y1 x1 M7_s1 vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XM7_2 M7_s1 x1 vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XM8_1 y2 x1 M8_s1 vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XM8_2 M8_s1 x1 vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XM9  x1   vbp2 y1  vdd sg13_hv_pmos w=2u l=2u  ng=1 m=1
+XM10 out  vbp2 y2  vdd sg13_hv_pmos w=2u l=2u  ng=1 m=1
+.ends ota_fc
+
+* =====================================================================
+*  Amplificador de entrada completo (CCIA)
+* =====================================================================
+.subckt ecg_lna inp inn out vref vdd vss iref rst rstb
+* rama inversora: electrodo (-) -> Cin -> nodo nm, realimentacion desde out
+XCin1 inn nm  cap_cmim w=30u l=30u m=15
+XCf1  nm  out cap_cmim w=11.5u l=11.5u m=1
+XPR1  nm  out pseudor
+* rama no inversora: electrodo (+) -> Cin -> nodo np, Cf a vref
+XCin2 inp np  cap_cmim w=30u l=30u m=15
+XCf2  np  vref cap_cmim w=11.5u l=11.5u m=1
+XPR2  np  vref pseudor
+* OTA
+XOTA  np nm out vdd vss iref ota_fc
+* llaves de reset rapido PMOS (activas con rstb en bajo), pozo a vref para no tener fugas
+XSW1  np rstb vref vref sg13_hv_pmos w=1u l=1u ng=1 m=1
+XSW2  nm out vref vdd rst rstb llave_t
+.ends ecg_lna
+
+
+* =====================================================================
+*  OTA de baja corriente para la etapa 2 (5 transistores, entrada PMOS)
+*  Corriente de cola ~8 nA, derivada de iref con dos espejos divisores
+*  (1 uA -> 125 nA -> 7,8 nA) hechos con transistores unitarios.
+* =====================================================================
+.subckt ota_lp vp vm out vdd vss iref
+* espejo 1: copia 1 uA desde iref
+XMBP4 pb4  pb4  vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XMBN5_1 pb4 iref MBN5_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBN5_2 MBN5_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBP5 n5   pb4  vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+* divisor 1/8: diodo NMOS m=8 -> salida m=1 (125 nA)
+XMBN6_1 n5 n5 MBN6_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=8
+XMBN6_2 MBN6_s1 n5 vss vss sg13_hv_nmos w=4u l=10u ng=1 m=8
+XMBN7_1 p6 n5 MBN7_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMBN7_2 MBN7_s1 n5 vss vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+* divisor 1/16: diodo PMOS m=16 -> cola m=1 (7,8 nA)
+XMBP6 p6   p6   vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=16
+XM20  tail p6   vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+* primera etapa: par PMOS (inversion debil) con carga espejo NMOS
+* (entradas cruzadas porque la segunda etapa invierte)
+XM21  d1   vm   tail tail sg13_hv_pmos w=10u l=2u ng=1 m=1
+XM22  x    vp   tail tail sg13_hv_pmos w=10u l=2u ng=1 m=1
+XM23  d1   d1   vss vss sg13_hv_nmos w=2u l=10u ng=1 m=1
+XM24  x    d1   vss vss sg13_hv_nmos w=2u l=10u ng=1 m=1
+* segunda etapa = buffer de salida: fuente comun NMOS con carga PMOS de 15 uA
+* (maneja el pin del chip: hasta ~100 pF directo, o 10 kohm + 10 nF)
+XM25 out x vss vss sg13_hv_nmos w=12u l=1u ng=2 m=1
+XM26  out  pb4  vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=15
+* compensacion Miller ~15 pF: fija el corte superior en ~150 Hz
+XCC   out  x    cap_cmim w=26u l=26u m=15
+.ends ota_lp
+
+* =====================================================================
+*  Referencia de 1,65 V interna: divisor resistivo VDD/2 + buffer seguidor
+*  Divisor: 2 x 1 Mohm en resistor rhigh (1360 ohm/cuadrado, 0,5 x 368 um)
+*  Buffer: OTA de 5 transistores con 1 uA de cola, en seguidor
+*  Salida vref: 10 pF internos; se recomienda 1 uF externo en el pin VREF
+* =====================================================================
+.subckt vref_gen vref vdd vss iref
+* resistores ideales de 1 Mohm en lugar de rhigh (solo para esta verificacion de sistema)
+R1   vdd  vdiv 1MEG
+R2   vdiv vss  1MEG
+XCD  vdiv vss  cap_cmim w=26u l=26u m=10
+* polarizacion: 1 uA copiado de iref
+XMV1_1 pbv iref MV1_s1 vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMV1_2 MV1_s1 iref vss vss sg13_hv_nmos w=4u l=10u ng=1 m=1
+XMV2 pbv  pbv  vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XMV3 tlv  pbv  vdd vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+* par PMOS (pozo a VDD para que no flote al encender): vdiv a la entrada no inversora, vref realimentado
+XMV4 dv1  vdiv tlv vdd sg13_hv_pmos w=10u l=2u ng=1 m=1
+XMV5 vref vref tlv vdd sg13_hv_pmos w=10u l=2u ng=1 m=1
+XMV6 dv1  dv1  vss vss sg13_hv_nmos w=2u l=10u ng=1 m=1
+XMV7 vref dv1  vss vss sg13_hv_nmos w=2u l=10u ng=1 m=1
+XCV  vref vss  cap_cmim w=26u l=26u m=10
+.ends vref_gen
+
+* =====================================================================
+*  Fuente de corriente de referencia (Iref): multiplicador beta en inversion debil
+*  I_nucleo = n*UT*ln(8)/Rset ~ 0,5 uA con Rset = 130 kohm (resistencia EXTERNA, pin RSET)
+*  Simulado: 1,0 uA a 27 C; +-1 % entre 3,0 y 3,6 V; casi igual en todos los corners; PTAT (+16 % de 0 a 50 C)
+*  Salida: 2 x I_nucleo ~ 1 uA, entregada al nodo iref del chip
+*  La corriente es PTAT: mantiene constante el gm de los OTA con la temperatura
+* =====================================================================
+.subckt iref_gen iref rset vdd vss
+* nucleo: M1 (x1) y M2 (x8) NMOS en inversion debil, espejo PMOS 1:1
+XMI1 n1  n1  vss  vss sg13_hv_nmos w=10u l=2u ng=1 m=1
+XMI2 p2  n1  rset vss sg13_hv_nmos w=10u l=2u ng=1 m=8
+XMI3 p2  p2  vdd  vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+XMI4 n1  p2  vdd  vdd sg13_hv_pmos w=4u l=10u ng=1 m=1
+* salida x2 hacia iref
+XMI5 iref p2 vdd  vdd sg13_hv_pmos w=4u l=10u ng=1 m=2
+* arranque: si n1 esta en 0, su sube y XMS3 tira p2 abajo para encender el nucleo
+* pull-up muy debil (4 PMOS largos en serie, ~0,1 uA) y sensor de n1 fuerte
+XMS1a_1 s1 vss MS1a_s1 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1a_2 MS1a_s1 vss MS1a_s2 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1a_3 MS1a_s2 vss MS1a_s3 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1a_4 MS1a_s3 vss MS1a_s4 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1a_5 MS1a_s4 vss vdd vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1b_1 s2 vss MS1b_s1 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1b_2 MS1b_s1 vss MS1b_s2 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1b_3 MS1b_s2 vss MS1b_s3 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1b_4 MS1b_s3 vss MS1b_s4 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1b_5 MS1b_s4 vss s1 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1c_1 s3 vss MS1c_s1 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1c_2 MS1c_s1 vss MS1c_s2 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1c_3 MS1c_s2 vss MS1c_s3 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1c_4 MS1c_s3 vss MS1c_s4 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1c_5 MS1c_s4 vss s2 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1d_1 su vss MS1d_s1 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1d_2 MS1d_s1 vss MS1d_s2 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1d_3 MS1d_s2 vss MS1d_s3 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1d_4 MS1d_s3 vss MS1d_s4 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS1d_5 MS1d_s4 vss s3 vdd sg13_hv_pmos w=0.3u l=10u ng=1 m=1
+XMS2 su n1 vss vss sg13_hv_nmos w=20u l=1u ng=2 m=1
+XMS3 p2  su  vss  vss sg13_hv_nmos w=1u l=1u ng=1 m=1
+* desacople de los nodos de polarizacion (estabiliza contra el flanco del reset y el ruido)
+XCN1 n1   vss cap_cmim w=26u l=26u m=2
+XCP2 p2   vdd cap_cmim w=26u l=26u m=2
+XCIR iref vss cap_cmim w=26u l=26u m=2
+.ends iref_gen
+
+* =====================================================================
+*  Etapa 2: pasabanda con ganancia x5 (realimentacion capacitiva)
+*  Capacitor unitario MIM de 26u x 26u (~1,01 pF) para buen apareamiento
+* =====================================================================
+.subckt ecg_bpf in out vref vdd vss iref rst rstb
+XC1  in  nm2 cap_cmim w=26u l=26u m=5
+XC2  nm2 out cap_cmim w=26u l=26u m=1
+XPR3 nm2 out pseudor4
+XOTA2 vref nm2 out vdd vss iref ota_lp
+* llave de reset rapido en T: descarga C2 (nm2 a la salida)
+XSW3  nm2 out vref vdd rst rstb llave_t
+.ends ecg_bpf
+
+* =====================================================================
+*  Frente analogico completo (etapas 1 + 2)
+* =====================================================================
+.subckt ecg_afe inp inn out1 out2 vref vdd vss iref rst
+* inversor: el pin rst es activo en alto; las llaves PMOS usan rstb
+XINVP rstb rst vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=1
+XINVN rstb rst vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+XLNA inp inn out1 vref vdd vss iref rst rstb ecg_lna
+XBPF out1 out2 vref vdd vss iref rst rstb ecg_bpf
+.ends ecg_afe
+
+* =====================================================================
+*  BANCO DE PRUEBA: encendido con reset y senal de ECG
+*  Alimentacion y corriente de referencia suben en 1 ms; pulso de reset de 2 a 20 ms.
+*  Senal: amplitud diferencial pico = 2 x __AMP__, frecuencia __FREQ__ Hz, desde 0,1 s
+* =====================================================================
+.temp __TEMP__
+VDD  vdd  0 PWL(0 0 __TRAMPA__ 3.3)
+* referencia ideal (vref_gen ya validada por separado en 7 corners y 3 VDD);
+* la fuente de corriente Iref SI es la real
+VREF vref 0 PWL(0 0 __TRAMPA__ 1.65)
+XIREF iref rset vdd 0 iref_gen
+RSET  rset 0 130k
+* capacidad del nodo iref (compuertas + pad), ayuda al simulador en el flanco del reset
+CIREF iref 0 1p
+VRST rst  0 PWL(0 0 10m 0 10.5m 3.3 30m 3.3 30.5m 0)
+* metodo de integracion mas robusto para el encendido
+.option method=gear vntol=1e-5 abstol=1e-11
+VINP inp 0 DC 0.3 SIN(0.3 __AMP__ __FREQ__ 0.1)
+VINN inn 0 DC 0   SIN(0 __SIGNO____AMP__ __FREQ__ 0.1)
+* carga de salida: capacitancia directa + filtro RC externo opcional
+CP  out2 0 __CP__
+RS  out2 pin __RS__
+CF  pin  0 __CF__
+XAFE inp inn out1 out2 vref vdd 0 iref rst ecg_afe
+
+.control
+  tran 0.1m 1.5 0 __TMAX__ uic
+  meas tran np15  FIND v(xafe.xlna.np) AT=1.5
+  meas tran nm215 FIND v(xafe.xbpf.nm2) AT=1.5
+  meas tran oavg AVG v(out2) from=1.0 to=1.5
+  meas tran omin MIN v(out2) from=1.0 to=1.5
+  meas tran omax MAX v(out2) from=1.0 to=1.5
+  meas tran ivdd AVG i(VDD) from=1.0 to=1.5
+  echo RCASO __CORNER__ __TEMP__ rampa___TRAMPA__ __CARGA__ __AMP__ __FREQ__ $&ivdd $&np15 $&nm215 $&oavg $&omin $&omax
+.endc
+.end

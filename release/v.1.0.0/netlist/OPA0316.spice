@@ -1,0 +1,1015 @@
+************************************************************************
+*
+* Copyright 2024 IHP PDK Authors
+* 
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* 
+*    https://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_DCNDiode
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_DCPDiode
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadIOVss
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_N43N43D4R
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_RCClampResistor
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_RCClampInverter
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadVdd
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadIOVdd
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadVss
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Filler2000
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_io_inv_x1
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_LevelUp
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_io_nor2_x1
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_io_tie
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_io_nand2_x1
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_GateDecode
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_N2N2D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_P2N2D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_SecondaryProtection
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_LevelDown
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadInOut4mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_P15N15D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_N15N15D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadInOut30mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_LevelUpInv
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_GateLevelUpInv
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadOut4mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadOut30mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadIn
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_P8N8D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_N8N8D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadInOut16mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadOut16mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadTriOut4mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadTriOut16mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadTriOut30mA
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Corner
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Filler4000
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Filler1000
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Filler200
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Filler400
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Filler10000
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_P20N0D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_Clamp_N20N0D
+* View Name:    schematic
+************************************************************************
+************************************************************************
+* Library Name: sg13g2_io
+* Cell Name:    sg13g2_IOPadAnalog
+* View Name:    schematic
+************************************************************************
+.SUBCKT sg13g2_DCNDiode anode cathode guard SUBX
+*.PININFO anode:B cathode:B guard:B
+DD1 SUBX cathode dantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u
+DD0 SUBX cathode dantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u
+RR0 anode SUBX ptap1 A=141.253p P=47.54u
+.ENDS sg13g2_DCNDiode
+.SUBCKT sg13g2_DCPDiode anode cathode guard SUBX
+*.PININFO anode:B cathode:B guard:B
+DD1 anode cathode dpantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u
+DD0 anode cathode dpantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u
+RR0 guard SUBX ptap1 A=33.524p P=23.16u
+.ENDS sg13g2_DCPDiode
+.SUBCKT sg13g2_IOPadIOVss vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+XI3 iovss iovss iovdd / SUBX sg13g2_DCNDiode
+XI2 iovss iovdd iovss / SUBX sg13g2_DCPDiode
+RR1 vss SUBX ptap1 A=24.01p P=19.6u
+RR0 iovss SUBX ptap1 A=5.487n P=296.3u
+.ENDS sg13g2_IOPadIOVss
+.SUBCKT sg13g2_Clamp_N43N43D4R gate iovss pad SUBX
+*.PININFO gate:I iovss:B pad:B
+MN0<1> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<2> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<3> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<4> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<5> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<6> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<7> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<8> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<9> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<10> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<11> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<12> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<13> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<14> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<15> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<16> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<17> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<18> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<19> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<20> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<21> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<22> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<23> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<24> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<25> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<26> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<27> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<28> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<29> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<30> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<31> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<32> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<33> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<34> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<35> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<36> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<37> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<38> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<39> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<40> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<41> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<42> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<43> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<44> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<45> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<46> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<47> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<48> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<49> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<50> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<51> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<52> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<53> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<54> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<55> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<56> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<57> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<58> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<59> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<60> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<61> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<62> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<63> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<64> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<65> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<66> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<67> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<68> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<69> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<70> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<71> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<72> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<73> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<74> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<75> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<76> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<77> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<78> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<79> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<80> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<81> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<82> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<83> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<84> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<85> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<86> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<87> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<88> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<89> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<90> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<91> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<92> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<93> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<94> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<95> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<96> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<97> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<98> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<99> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<100> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<101> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<102> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<103> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<104> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<105> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<106> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<107> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<108> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<109> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<110> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<111> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<112> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<113> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<114> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<115> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<116> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<117> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<118> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<119> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<120> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<121> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<122> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<123> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<124> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<125> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<126> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<127> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<128> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<129> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<130> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<131> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<132> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<133> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<134> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<135> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<136> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<137> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<138> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<139> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<140> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<141> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<142> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<143> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<144> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<145> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<146> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<147> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<148> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<149> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<150> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<151> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<152> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<153> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<154> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<155> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<156> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<157> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<158> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<159> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<160> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<161> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<162> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<163> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<164> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<165> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<166> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<167> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<168> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<169> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<170> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<171> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+MN0<172> pad gate iovss SUBX sg13_hv_nmos m=1 w=4.4u l=600.0n ng=1
+RR0 iovss SUBX ptap1 A=65.61p P=32.4u
+DD0 SUBX gate dantenna m=1 w=480n l=480n a=230.4f p=1.92u
+.ENDS sg13g2_Clamp_N43N43D4R
+.SUBCKT sg13g2_RCClampResistor pin1 pin2 SUBX
+*.PININFO pin1:B pin2:B
+RR15 net15 net16 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR20 net20 net21 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR23 net23 net24 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR17 net17 net18 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR16 net16 net17 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR25 net25 pin2 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR22 net22 net23 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR19 net19 net20 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR24 net24 net25 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR21 net21 net22 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR18 net18 net19 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR5 net5 net6 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR8 net8 net9 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR11 net11 net12 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR14 net14 net15 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR2 net2 net3 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR1 net1 net2 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR13 net13 net14 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR10 net10 net11 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR7 net7 net8 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR4 net4 net5 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR12 net12 net13 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR9 net9 net10 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1 
+RR6 net6 net7 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR3 net3 net4 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+RR0 pin1 net1 5.239K $SUB=SUBX $[rppd] l=20u w=1u b=0 m=1
+.ENDS sg13g2_RCClampResistor
+.SUBCKT sg13g2_RCClampInverter out in iovss supply SUBX
+*.PININFO in:I out:O iovss:B supply:B
+MN1 iovss in iovss SUBX sg13_hv_nmos m=1 w=63.000u l=9.5u ng=7
+MN3 out in iovss SUBX sg13_hv_nmos m=1 w=54.000u l=500.0n ng=6
+MN0 iovss in iovss SUBX sg13_hv_nmos m=1 w=63.000u l=9.5u ng=7
+MN2 out in iovss SUBX sg13_hv_nmos m=1 w=54.000u l=500.0n ng=6
+RR0 iovss SUBX ptap1 A=68.973p P=33.22u
+MP0 out in supply supply sg13_hv_pmos m=1 w=350.000u l=500.0n ng=50
+.ENDS sg13g2_RCClampInverter
+.SUBCKT sg13g2_IOPadVdd vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+XI1 net3 iovss vdd / SUBX sg13g2_Clamp_N43N43D4R
+XI4 vdd net1 / SUBX sg13g2_RCClampResistor
+RR1 iovss SUBX ptap1 A=1.97n P=177.54u
+RR0 vss SUBX ptap1 A=24.01p P=19.6u
+XI3 net3 net1 iovss vdd / SUBX sg13g2_RCClampInverter
+.ENDS sg13g2_IOPadVdd
+.SUBCKT sg13g2_IOPadIOVdd vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+XI1 net4 iovss iovdd / SUBX sg13g2_Clamp_N43N43D4R
+XI3 iovdd net1 / SUBX sg13g2_RCClampResistor
+XI2 net4 net1 iovss iovdd / SUBX sg13g2_RCClampInverter
+RR0 vss SUBX ptap1 A=24.01p P=19.6u
+RR1 iovss SUBX ptap1 A=1.983n P=178.14u
+.ENDS sg13g2_IOPadIOVdd
+.SUBCKT sg13g2_IOPadVss vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+XI1 iovss vss iovdd / SUBX sg13g2_DCNDiode
+XI2 vss iovdd iovss / SUBX sg13g2_DCPDiode
+RR1 iovss SUBX ptap1 A=5.329n P=292u
+RR0 vss SUBX ptap1 A=23.523p P=19.4u
+.ENDS sg13g2_IOPadVss
+.SUBCKT sg13g2_Filler2000 vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=2.856p P=6.76u
+RR0 iovss SUBX ptap1 A=695.113p P=105.46u
+.ENDS sg13g2_Filler2000
+.SUBCKT sg13g2_io_inv_x1 nq i vdd vss SUBX
+*.PININFO i:I nq:O vdd:B vss:B
+MN0 nq i vss SUBX sg13_lv_nmos m=1 w=3.93u l=130.00n ng=1
+MP0 nq i vdd vdd sg13_lv_pmos m=1 w=4.41u l=130.00n ng=1
+RR0 vss SUBX ptap1 A=624.1f P=3.16
+.ENDS sg13g2_io_inv_x1
+.SUBCKT sg13g2_LevelUp o i iovdd vdd vss SUBX
+*.PININFO i:I o:O iovdd:B vdd:B vss:B
+MN1 net2 i vss SUBX sg13_lv_nmos m=1 w=2.75u l=130.00n ng=1
+MP3 net2 i vdd vdd sg13_lv_pmos m=1 w=4.75u l=130.00n ng=1
+MN0 o net4 vss SUBX sg13_hv_nmos m=1 w=1.9u l=450.00n ng=1
+MN3 net4 i vss SUBX sg13_hv_nmos m=1 w=1.9u l=450.00n ng=1
+MN2 net3 net2 vss SUBX sg13_hv_nmos m=1 w=1.9u l=450.00n ng=1
+MP0 o net4 iovdd iovdd sg13_hv_pmos m=1 w=3.9u l=450.00n ng=1
+MP1 net3 net4 iovdd iovdd sg13_hv_pmos m=1 w=300.0n l=450.00n ng=1
+MP2 net4 net3 iovdd iovdd sg13_hv_pmos m=1 w=300.0n l=450.00n ng=1
+RR0 vss SUBX ptap1 A=912.025f P=3.82u
+.ENDS sg13g2_LevelUp
+.SUBCKT sg13g2_io_nor2_x1 nq i0 i1 vdd vss SUBX
+*.PININFO i0:I i1:I nq:O vdd:B vss:B
+MN0 nq i0 vss SUBX sg13_lv_nmos m=1 w=3.93u l=130.00n ng=1
+MN1 nq i1 vss SUBX sg13_lv_nmos m=1 w=3.93u l=130.00n ng=1
+MP0 net1 i0 vdd vdd sg13_lv_pmos m=1 w=4.41u l=130.00n ng=1
+MP1 nq i1 net1 vdd sg13_lv_pmos m=1 w=4.41u l=130.00n ng=1
+RR0 vss SUBX ptap1 A=656.1f P=3.24u
+.ENDS sg13g2_io_nor2_x1
+.SUBCKT sg13g2_io_tie vdd vss SUBX
+*.PININFO vdd:B vss:B
+RR0 vss SUBX ptap1 A=624.1f P=3.16u
+.ENDS sg13g2_io_tie
+.SUBCKT sg13g2_io_nand2_x1 nq i0 i1 vdd vss SUBX
+*.PININFO i0:I i1:I nq:O vdd:B vss:B
+MP1 nq i1 vdd vdd sg13_lv_pmos m=1 w=4.41u l=130.00n ng=1
+MP0 nq i0 vdd vdd sg13_lv_pmos m=1 w=4.41u l=130.00n ng=1
+MN1 net1 i0 vss SUBX sg13_lv_nmos m=1 w=3.93u l=130.00n ng=1
+MN0 nq i1 net1 SUBX sg13_lv_nmos m=1 w=3.93u l=130.00n ng=1
+RR0 vss SUBX ptap1 A=656.1f P=3.24u
+.ENDS sg13g2_io_nand2_x1
+.SUBCKT sg13g2_GateDecode ngate pgate core en iovdd vdd vss SUBX
+*.PININFO core:I en:I ngate:O pgate:O iovdd:B vdd:B vss:B
+XI1 net3 en vdd vss / SUBX sg13g2_io_inv_x1
+XI4 ngate net4 iovdd vdd vss / SUBX sg13g2_LevelUp
+XI2 pgate net2 iovdd vdd vss / SUBX sg13g2_LevelUp
+XI3 net4 core net3 vdd vss / SUBX sg13g2_io_nor2_x1
+XI0 vdd vss / SUBX sg13g2_io_tie
+XI5 net2 core en vdd vss / SUBX sg13g2_io_nand2_x1
+.ENDS sg13g2_GateDecode
+.SUBCKT sg13g2_Clamp_N2N2D gate iovss pad SUBX
+*.PININFO gate:I iovss:B pad:B
+RR0 iovss SUBX ptap1 A=55.801p P=29.88u
+MN1 pad gate iovss SUBX sg13_hv_nmos m=1 w=8.8u l=600.0n ng=2
+DD0 SUBX gate dantenna m=1 w=780.00n l=780.00n a=608.400f p=3.12u
+.ENDS sg13g2_Clamp_N2N2D
+.SUBCKT sg13g2_Clamp_P2N2D gate iovdd iovss pad SUBX
+*.PININFO gate:I iovdd:B iovss:B pad:B
+DD0 gate iovdd dpantenna m=1 w=480n l=480n a=230.4f p=1.92u
+MP1 pad gate iovdd iovdd sg13_hv_pmos m=1 w=13.32u l=600.0n ng=2
+MP0 pad gate iovdd iovdd sg13_hv_pmos m=1 w=13.32u l=600.0n ng=2
+RR0 iovss SUBX ptap1 A=66.994p P=32.74u
+.ENDS sg13g2_Clamp_P2N2D
+.SUBCKT sg13g2_SecondaryProtection core minus pad plus SUBX
+*.PININFO core:B minus:B pad:B plus:B
+RR0 pad core 586.899 $SUB=SUBX $[rppd] m=1 l=2u w=1u b=0 m=1
+DD1 SUBX core dantenna m=1 w=640n l=3.1u a=1.984p p=7.48u
+RR1 minus SUBX ptap1 A=9.03p P=12.02u
+DD0 core plus dpantenna m=1 w=640n l=4.98u a=3.187p p=11.24u
+.ENDS sg13g2_SecondaryProtection
+.SUBCKT sg13g2_LevelDown core pad iovdd iovss vdd vss SUBX
+*.PININFO pad:I core:O iovdd:B iovss:B vdd:B vss:B
+MP0 vdd vdd vdd vdd sg13_hv_pmos m=1 w=4.65u l=450.00n ng=1
+MP2 net4 net7 iovdd iovdd sg13_hv_pmos m=1 w=4.6u l=450.00n ng=2
+MP3 net7 net1 iovdd iovdd sg13_hv_pmos m=1 w=4.6u l=450.00n ng=2
+MN3 net4 net7 iovss SUBX sg13_hv_nmos m=1 w=1.3u l=450.00n ng=1
+MN4 net7 net1 iovss SUBX sg13_hv_nmos m=1 w=1.3u l=450.00n ng=1
+MN2 net2 net4 vss SUBX sg13_hv_nmos m=1 w=2.65u l=450.00n ng=1
+MN0 vdd net7 net2 SUBX sg13_hv_nmos m=1 w=2.65u l=450.00n ng=1
+MN1 core net2 vss SUBX sg13_lv_nmos m=1 w=2.75u l=130.00n ng=1
+MP1 core net2 vdd vdd sg13_lv_pmos m=1 w=4.75u l=130.00n ng=1
+RR1 iovss SUBX ptap1 A=970.225f P=3.94u
+RR0 vss SUBX ptap1 A=2.016p P=5.68u
+XI0 net1 iovss pad iovdd / SUBX sg13g2_SecondaryProtection
+.ENDS sg13g2_LevelDown
+.SUBCKT sg13g2_IOPadInOut4mA pad c2p p2c c2p_en vdd vss iovdd iovss SUBX
+*.PININFO c2p:I c2p_en:I p2c:O iovdd:B iovss:B pad:B vdd:B vss:B
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+XI2 net2 net1 c2p c2p_en iovdd vdd vss / SUBX sg13g2_GateDecode
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N2N2D
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P2N2D
+XI4 p2c pad iovdd iovss vdd vss / SUBX sg13g2_LevelDown
+RR0 vss SUBX ptap1 A=18.966p P=17.42u
+RR1 iovss SUBX ptap1 A=4.314n P=262.72u
+XI5 iovss pad iovdd / SUBX sg13g2_DCNDiode
+.ENDS sg13g2_IOPadInOut4mA
+.SUBCKT sg13g2_Clamp_P15N15D gate iovdd iovss pad SUBX
+*.PININFO gate:I iovdd:B iovss:B pad:B
+DD0 gate iovdd dpantenna m=1 w=780.00n l=780.00n a=608.400f p=3.12u
+RR0 iovss SUBX ptap1 A=66.994p P=32.74u
+MP1 pad gate iovdd iovdd sg13_hv_pmos m=1 w=99.9u l=600.0n ng=15
+MP0 pad gate iovdd iovdd sg13_hv_pmos m=1 w=99.9u l=600.0n ng=15
+.ENDS sg13g2_Clamp_P15N15D
+.SUBCKT sg13g2_Clamp_N15N15D gate iovss pad SUBX
+*.PININFO gate:I iovss:B pad:B
+RR0 iovss SUBX ptap1 A=55.801p P=29.88u
+MN0 pad gate iovss SUBX sg13_hv_nmos m=1 w=66.000u l=600.0n ng=15
+DD0 SUBX gate dantenna m=1 w=780.00n l=780.00n a=608.400f p=3.12u
+.ENDS sg13g2_Clamp_N15N15D
+.SUBCKT sg13g2_IOPadInOut30mA pad c2p p2c c2p_en vdd vss iovdd iovss SUBX
+*.PININFO c2p:I c2p_en:I p2c:O iovdd:B iovss:B pad:B vdd:B vss:B
+XI4 p2c pad iovdd iovss vdd vss / SUBX sg13g2_LevelDown
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P15N15D
+XI5 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N15N15D
+RR0 vss SUBX ptap1 A=19.141p P=17.5u
+RR1 iovss SUBX ptap1 A=4.313n P=262.7u
+XI2 net2 net1 c2p c2p_en iovdd vdd vss / SUBX sg13g2_GateDecode
+.ENDS sg13g2_IOPadInOut30mA
+.SUBCKT sg13g2_LevelUpInv o i iovdd vdd vss SUBX
+*.PININFO i:I o:O iovdd:B vdd:B vss:B
+MN1 net2 i vss SUBX sg13_lv_nmos m=1 w=2.75u l=130.00n ng=1
+MP3 net2 i vdd vdd sg13_lv_pmos m=1 w=4.75u l=130.00n ng=1
+MN0 o net4 vss SUBX sg13_hv_nmos m=1 w=1.9u l=450.00n ng=1
+MN3 net4 net2 vss SUBX sg13_hv_nmos m=1 w=1.9u l=450.00n ng=1
+MN2 net3 i vss SUBX sg13_hv_nmos m=1 w=1.9u l=450.00n ng=1
+MP0 o net4 iovdd iovdd sg13_hv_pmos m=1 w=3.9u l=450.00n ng=1
+MP1 net3 net4 iovdd iovdd sg13_hv_pmos m=1 w=300.0n l=450.00n ng=1
+MP2 net4 net3 iovdd iovdd sg13_hv_pmos m=1 w=300.0n l=450.00n ng=1
+RR0 vss SUBX ptap1 A=1.051p P=4.1u
+.ENDS sg13g2_LevelUpInv
+.SUBCKT sg13g2_GateLevelUpInv ngate pgate iovdd core vdd vss SUBX
+*.PININFO core:I ngate:O pgate:O iovdd:B vdd:B vss:B
+XI1 pgate core iovdd vdd vss / SUBX sg13g2_LevelUpInv
+XI0 ngate core iovdd vdd vss / SUBX sg13g2_LevelUpInv
+.ENDS sg13g2_GateLevelUpInv
+.SUBCKT sg13g2_IOPadOut4mA pad c2p vdd vss iovdd iovss SUBX
+*.PININFO c2p:I pad:O iovdd:B iovss:B vdd:B vss:B
+XI2 net2 net1 iovdd c2p vdd vss / SUBX sg13g2_GateLevelUpInv
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P2N2D
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N2N2D
+XI4 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR1 iovss SUBX ptap1 A=4.343n P=263.6u
+RR0 vss SUBX ptap1 A=21.902p P=18.72u
+.ENDS sg13g2_IOPadOut4mA
+.SUBCKT sg13g2_IOPadOut30mA pad c2p vdd vss iovdd iovss SUBX
+*.PININFO c2p:I pad:O iovdd:B iovss:B vdd:B vss:B
+XI2 net2 net1 iovdd c2p vdd vss / SUBX sg13g2_GateLevelUpInv
+XI1 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P15N15D
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N15N15D
+XI4 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI0 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR0 vss SUBX ptap1 A=21.902p P=18.72u
+RR1 iovss SUBX ptap1 A=4.313n P=262.7u
+.ENDS sg13g2_IOPadOut30mA
+.SUBCKT sg13g2_IOPadIn pad p2c vdd vss iovdd iovss SUBX
+*.PININFO pad:I p2c:O iovdd:B iovss:B vdd:B vss:B
+XI0 p2c pad iovdd iovss vdd vss / SUBX sg13g2_LevelDown
+XI2 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR0 vss SUBX ptap1 A=21.252p P=18.44u
+RR1 iovss SUBX ptap1 A=5.35n P=292.58u
+.ENDS sg13g2_IOPadIn
+.SUBCKT sg13g2_Clamp_P8N8D gate iovdd iovss pad SUBX
+*.PININFO gate:I iovdd:B iovss:B pad:B
+RR0 iovss SUBX ptap1 A=66.994p P=32.74u
+MP2 pad gate iovdd iovdd sg13_hv_pmos m=1 w=53.28u l=600.0n ng=8
+MP0 pad gate iovdd iovdd sg13_hv_pmos m=1 w=53.28u l=600.0n ng=8
+DD0 gate iovdd dpantenna m=1 w=480n l=480n a=230.4f p=1.92u
+.ENDS sg13g2_Clamp_P8N8D
+.SUBCKT sg13g2_Clamp_N8N8D gate iovss pad SUBX
+*.PININFO gate:I iovss:B pad:B
+RR0 iovss SUBX ptap1 A=55.801p P=29.88u
+MN0 pad gate iovss SUBX sg13_hv_nmos m=1 w=35.2u l=600.0n ng=8
+DD0 SUBX gate dantenna m=1 w=780.00n l=780.00n a=608.400f p=3.12u
+.ENDS sg13g2_Clamp_N8N8D
+.SUBCKT sg13g2_IOPadInOut16mA pad c2p p2c c2p_en vdd vss iovdd iovss SUBX
+*.PININFO c2p:I c2p_en:I p2c:O iovdd:B iovss:B pad:B vdd:B vss:B
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+XI2 net2 net1 c2p c2p_en iovdd vdd vss / SUBX sg13g2_GateDecode
+XI5 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P8N8D
+XI4 p2c pad iovdd iovss vdd vss / SUBX sg13g2_LevelDown
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N8N8D
+RR0 vss SUBX ptap1 A=18.966p P=17.42u
+RR1 iovss SUBX ptap1 A=4.45n P=266.84u
+.ENDS sg13g2_IOPadInOut16mA
+.SUBCKT sg13g2_IOPadOut16mA pad c2p vdd vss iovdd iovss SUBX
+*.PININFO c2p:I pad:O iovdd:B iovss:B vdd:B vss:B
+XI2 net2 net1 iovdd c2p vdd vss / SUBX sg13g2_GateLevelUpInv
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P8N8D
+XI4 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N8N8D
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR0 vss SUBX ptap1 A=22.184p P=18.84u
+RR1 iovss SUBX ptap1 A=4.43n P=266.24u
+.ENDS sg13g2_IOPadOut16mA
+.SUBCKT sg13g2_IOPadTriOut4mA pad c2p c2p_en vdd vss iovdd iovss SUBX
+*.PININFO c2p:I c2p_en:I pad:O iovdd:B iovss:B vdd:B vss:B
+XI2 net2 net1 c2p c2p_en iovdd vdd vss / SUBX sg13g2_GateDecode
+XI4 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N2N2D
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P2N2D
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR0 vss SUBX ptap1 A=21.391p P=18.5u
+RR1 iovss SUBX ptap1 A=4.43n P=266.24u
+.ENDS sg13g2_IOPadTriOut4mA
+.SUBCKT sg13g2_IOPadTriOut16mA pad c2p c2p_en vdd vss iovdd iovss SUBX
+*.PININFO c2p:I c2p_en:I pad:O iovdd:B iovss:B vdd:B vss:B
+XI2 net2 net1 c2p c2p_en iovdd vdd vss / SUBX sg13g2_GateDecode
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P8N8D
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N8N8D
+XI4 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR0 vss SUBX ptap1 A=21.022p P=18.34u
+RR1 iovss SUBX ptap1 A=4.44n P=266.54u
+.ENDS sg13g2_IOPadTriOut16mA
+.SUBCKT sg13g2_IOPadTriOut30mA pad c2p c2p_en vdd vss iovdd iovss SUBX
+*.PININFO c2p:I c2p_en:I pad:O iovdd:B iovss:B vdd:B vss:B
+XI2 net2 net1 c2p c2p_en iovdd vdd vss / SUBX sg13g2_GateDecode
+XI4 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI3 net2 iovss pad / SUBX sg13g2_Clamp_N15N15D
+XI0 net1 iovdd iovss pad / SUBX sg13g2_Clamp_P15N15D
+XI1 pad iovdd iovss / SUBX sg13g2_DCPDiode
+RR0 vss SUBX ptap1 A=21.298p P=18.46u
+RR1 iovss SUBX ptap1 A=4.43n P=266.24u
+.ENDS sg13g2_IOPadTriOut30mA
+.SUBCKT sg13g2_Corner vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=13.177p P=14.52u
+RR0 iovss SUBX ptap1 A=10.13n P=402.6u
+.ENDS sg13g2_Corner
+.SUBCKT sg13g2_Filler4000 vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=5.856p P=9.68u
+RR0 iovss SUBX ptap1 A=1.416n P=150.5u
+.ENDS sg13g2_Filler4000
+.SUBCKT sg13g2_Filler1000 vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=1.369p P=4.68u
+RR0 iovss SUBX ptap1 A=328.697p P=72.52u
+.ENDS sg13g2_Filler1000
+.SUBCKT sg13g2_Filler200 vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=680.625f P=3.3u
+RR0 iovss SUBX ptap1 A=40.96p P=25.6u
+.ENDS sg13g2_Filler200
+.SUBCKT sg13g2_Filler400 vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=680.625f P=3.3u
+RR0 iovss SUBX ptap1 A=114.169p P=42.74u
+.ENDS sg13g2_Filler400
+.SUBCKT sg13g2_Filler10000 vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B vdd:B vss:B
+RR1 vss SUBX ptap1 A=14.861p Perim=15.42u
+RR0 iovss SUBX ptap1 A=3.622n Perim=240.72u
+.ENDS sg13g2_Filler10000
+.SUBCKT sg13g2_Clamp_P20N0D iovdd iovss pad SUBX
+*.PININFO iovdd:B iovss:B pad:B
+MP1 pad net2 iovdd iovdd sg13_hv_pmos m=1 w=133.2u l=600.0n ng=20
+MP0 pad net2 iovdd iovdd sg13_hv_pmos m=1 w=133.2u l=600.0n ng=20
+RR0 net2 iovdd 6.768K $SUB=iovdd $[rppd] l=12.9u w=500n b=0 m=1
+RR1 iovss SUBX ptap1 A=66.994p P=32.74u
+.ENDS sg13g2_Clamp_P20N0D
+.SUBCKT sg13g2_Clamp_N20N0D iovss pad SUBX
+*.PININFO iovss:B pad:B
+MN0 pad net2 iovss SUBX sg13_hv_nmos m=1 w=88.000u l=600.0n ng=20
+RR1 iovss SUBX ptap1 A=55.801p P=29.88u
+RR0 iovss net2 1.959K $SUB=SUBX $[rppd] l=3.54u w=500n b=0 m=1
+.ENDS sg13g2_Clamp_N20N0D
+.SUBCKT sg13g2_IOPadAnalog pad padres vdd vss iovdd iovss SUBX
+*.PININFO iovdd:B iovss:B pad:B padres:B vdd:B vss:B
+XI0 iovdd iovss pad / SUBX sg13g2_Clamp_P20N0D
+XI5 iovss pad iovdd / SUBX sg13g2_DCNDiode
+XI2 pad iovdd iovss / SUBX sg13g2_DCPDiode
+XI3 padres iovss pad iovdd / SUBX sg13g2_SecondaryProtection
+XI4 iovss pad / SUBX sg13g2_Clamp_N20N0D
+RR0 vss SUBX ptap1 A=23.863p P=19.54u
+RR1 iovss SUBX ptap1 A=4.3n P=262.3u
+.ENDS sg13g2_IOPadAnalog
+.SUBCKT unse316 INP INN OUT VREF RST RSET VDD VSS SUBX
+MIREF_MI1 IREF.N1 IREF.N1 VSS SUBX sg13_hv_nmos L=2u W=10u
+MIREF_MI2 IREF.P2 IREF.N1 RSET SUBX sg13_hv_nmos L=2u W=80u
+MIREF_MI3 IREF.P2 IREF.P2 VDD NW_93 sg13_hv_pmos L=10u W=4u
+MIREF_MI4 IREF.N1 IREF.P2 VDD NW_93 sg13_hv_pmos L=10u W=4u
+MIREF_MI5 IREF IREF.P2 VDD NW_93 sg13_hv_pmos L=10u W=8u
+MIREF_MS2 IREF.SU IREF.N1 VSS SUBX sg13_hv_nmos L=1u W=20u
+MIREF_MS3 IREF.P2 IREF.SU VSS SUBX sg13_hv_nmos L=1u W=1u
+MIREF_K01 IREF.SU VSS IREF.K1 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K02 IREF.K1 VSS IREF.K2 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K03 IREF.K2 VSS IREF.K3 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K04 IREF.K3 VSS IREF.K4 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K05 IREF.K4 VSS IREF.K5 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K06 IREF.K5 VSS IREF.K6 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K07 IREF.K6 VSS IREF.K7 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K08 IREF.K7 VSS IREF.K8 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K09 IREF.K8 VSS IREF.K9 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K10 IREF.K9 VSS IREF.K10 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K11 IREF.K10 VSS IREF.K11 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K12 IREF.K11 VSS IREF.K12 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K13 IREF.K12 VSS IREF.K13 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K14 IREF.K13 VSS IREF.K14 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K15 IREF.K14 VSS IREF.K15 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K16 IREF.K15 VSS IREF.K16 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K17 IREF.K16 VSS IREF.K17 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K18 IREF.K17 VSS IREF.K18 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K19 IREF.K18 VSS IREF.K19 NW_93 sg13_hv_pmos L=10u W=0.3u
+MIREF_K20 IREF.K19 VSS VDD NW_93 sg13_hv_pmos L=10u W=0.3u
+CIREF_CN1 IREF.N1 VSS cap_cmim w=26u l=26u m=2
+CIREF_CP2 IREF.P2 VDD cap_cmim w=26u l=26u m=2
+CIREF_CIR IREF VSS cap_cmim w=26u l=26u m=2
+MVREF_MV1a VREF.PBV IREF VREF.S1 SUBX sg13_hv_nmos L=10u W=4u
+MVREF_MV1b VREF.S1 IREF VSS SUBX sg13_hv_nmos L=10u W=4u
+MVREF_MV2 VREF.PBV VREF.PBV VDD NW_47 sg13_hv_pmos L=10u W=4u
+MVREF_MV3 VREF.TLV VREF.PBV VDD NW_47 sg13_hv_pmos L=10u W=4u
+MVREF_MV4 VREF.DV1 VREF.VDIV VREF.TLV NW_47 sg13_hv_pmos L=2u W=10u
+MVREF_MV5 VREF VREF VREF.TLV NW_47 sg13_hv_pmos L=2u W=10u
+MVREF_MV6 VREF.DV1 VREF.DV1 VSS SUBX sg13_hv_nmos L=10u W=2u
+MVREF_MV7 VREF VREF.DV1 VSS SUBX sg13_hv_nmos L=10u W=2u
+RVREF_R1 VDD VREF.VDIV SUBX rhigh w=0.5u l=368u
+RVREF_R2 VREF.VDIV VSS SUBX rhigh w=0.5u l=368u
+CVREF_CD VREF.VDIV VSS cap_cmim w=26u l=26u m=10
+CVREF_CV VREF VSS cap_cmim w=26u l=26u m=10
+MLNA_MBN3a LNA.VBN2 LNA.VBN2 LNA.N_MBN3 SUBX sg13_hv_nmos L=10u W=1u
+MLNA_MBN3b LNA.N_MBN3 LNA.VBN2 VSS SUBX sg13_hv_nmos L=10u W=1u
+MLNA_M5 LNA.X1 LNA.VBN2 LNA.F1 SUBX sg13_hv_nmos L=2u W=2u
+MLNA_M6 OUT1 LNA.VBN2 LNA.F2 SUBX sg13_hv_nmos L=2u W=2u
+MLNA_MBN1a IREF IREF LNA.N_MBN1 SUBX sg13_hv_nmos L=10u W=4u
+MLNA_MBN1b LNA.N_MBN1 IREF VSS SUBX sg13_hv_nmos L=10u W=4u
+MLNA_MBN2a LNA.PB IREF LNA.N_MBN2 SUBX sg13_hv_nmos L=10u W=4u
+MLNA_MBN2b LNA.N_MBN2 IREF VSS SUBX sg13_hv_nmos L=10u W=4u
+MLNA_MBN4a LNA.VBP2 IREF LNA.N_MBN4 SUBX sg13_hv_nmos L=10u W=4u
+MLNA_MBN4b LNA.N_MBN4 IREF VSS SUBX sg13_hv_nmos L=10u W=4u
+MLNA_M3a LNA.F1 IREF LNA.N_M3 SUBX sg13_hv_nmos L=10u W=8u
+MLNA_M3b LNA.N_M3 IREF VSS SUBX sg13_hv_nmos L=10u W=8u
+MLNA_M4a LNA.F2 IREF LNA.N_M4 SUBX sg13_hv_nmos L=10u W=8u
+MLNA_M4b LNA.N_M4 IREF VSS SUBX sg13_hv_nmos L=10u W=8u
+MLNA_MBP3a LNA.VBP2 LNA.VBP2 LNA.N_MBP3 NW_49 sg13_hv_pmos L=10u W=1u
+MLNA_MBP3b LNA.N_MBP3 LNA.VBP2 VDD NW_49 sg13_hv_pmos L=10u W=1u
+MLNA_M9 LNA.X1 LNA.VBP2 LNA.Y1 NW_49 sg13_hv_pmos L=2u W=2u
+MLNA_M10 OUT1 LNA.VBP2 LNA.Y2 NW_49 sg13_hv_pmos L=2u W=2u
+MLNA_MBP1 LNA.PB LNA.PB VDD NW_49 sg13_hv_pmos L=10u W=4u
+MLNA_MBP2 LNA.VBN2 LNA.PB VDD NW_49 sg13_hv_pmos L=10u W=4u
+MLNA_M0 LNA.TAIL LNA.PB VDD NW_49 sg13_hv_pmos L=10u W=8u
+MLNA_M7a LNA.Y1 LNA.X1 LNA.N_M7 NW_49 sg13_hv_pmos L=10u W=4u
+MLNA_M7b LNA.N_M7 LNA.X1 VDD NW_49 sg13_hv_pmos L=10u W=4u
+MLNA_M8a LNA.Y2 LNA.X1 LNA.N_M8 NW_49 sg13_hv_pmos L=10u W=4u
+MLNA_M8b LNA.N_M8 LNA.X1 VDD NW_49 sg13_hv_pmos L=10u W=4u
+MLNA_SWB LNA.MID3 RSTB OUT1 NW_56 sg13_hv_pmos L=1u W=1u
+MLNA_M1a LNA.F1 LNA.NP LNA.TAIL NW_59 sg13_hv_pmos L=2u W=200u
+MLNA_M2a LNA.F2 LNA.NM LNA.TAIL NW_59 sg13_hv_pmos L=2u W=200u
+MLNA_M2b LNA.F2 LNA.NM LNA.TAIL NW_59 sg13_hv_pmos L=2u W=200u
+MLNA_M1b LNA.F1 LNA.NP LNA.TAIL NW_59 sg13_hv_pmos L=2u W=200u
+MLNA_PR2b LNA.MID2 LNA.MID2 VREF NW_67 sg13_hv_pmos L=4u W=1u
+MLNA_SW1 LNA.NP RSTB VREF NW_67 sg13_hv_pmos L=1u W=1u
+MLNA_SWA LNA.NM RSTB LNA.MID3 NW_67 sg13_hv_pmos L=1u W=1u
+MLNA_SWC LNA.MID3 RST VREF NW_67 sg13_hv_pmos L=1u W=1u
+MLNA_PR2a LNA.MID2 LNA.MID2 LNA.NP NW_71 sg13_hv_pmos L=4u W=1u
+MLNA_PR1a LNA.MID1 LNA.MID1 LNA.NM NW_74 sg13_hv_pmos L=4u W=1u
+MLNA_PR1b LNA.MID1 LNA.MID1 OUT1 NW_78 sg13_hv_pmos L=4u W=1u
+CLNA_Cin1 LNA.NM INN cap_cmim w=30u l=30u m=15
+CLNA_Cf1 LNA.NM OUT1 cap_cmim w=11.5u l=11.5u m=1
+CLNA_Cin2 LNA.NP INP cap_cmim w=30u l=30u m=15
+CLNA_Cf2 LNA.NP VREF cap_cmim w=11.5u l=11.5u m=1
+MBPF_M23 BPF.D1 BPF.D1 VSS SUBX sg13_hv_nmos L=10u W=2u
+MBPF_M24 BPF.X BPF.D1 VSS SUBX sg13_hv_nmos L=10u W=2u
+MBPF_INVN RSTB RST VSS SUBX sg13_hv_nmos L=0.5u W=1u
+MBPF_MBN5a BPF.PB4 IREF BPF.S5 SUBX sg13_hv_nmos L=10u W=4u
+MBPF_MBN5b BPF.S5 IREF VSS SUBX sg13_hv_nmos L=10u W=4u
+MBPF_MBN7a BPF.P6 BPF.N5 BPF.S7 SUBX sg13_hv_nmos L=10u W=4u
+MBPF_MBN7b BPF.S7 BPF.N5 VSS SUBX sg13_hv_nmos L=10u W=4u
+MBPF_M25 OUT BPF.X VSS SUBX sg13_hv_nmos L=1u W=12u
+MBPF_MBN6a BPF.N5 BPF.N5 BPF.S6 SUBX sg13_hv_nmos L=10u W=32u
+MBPF_MBN6b BPF.S6 BPF.N5 VSS SUBX sg13_hv_nmos L=10u W=32u
+MBPF_MBP4 BPF.PB4 BPF.PB4 VDD NW_52 sg13_hv_pmos L=10u W=4u
+MBPF_MBP5 BPF.N5 BPF.PB4 VDD NW_52 sg13_hv_pmos L=10u W=4u
+MBPF_M20 BPF.TAIL BPF.P6 VDD NW_52 sg13_hv_pmos L=10u W=4u
+MBPF_SWB BPF.MID4 RSTB OUT NW_52 sg13_hv_pmos L=1u W=1u
+MBPF_INVP RSTB RST VDD NW_52 sg13_hv_pmos L=0.5u W=2u
+MBPF_MBP6a BPF.P6 BPF.P6 VDD NW_52 sg13_hv_pmos L=10u W=32u
+MBPF_MBP6b BPF.P6 BPF.P6 VDD NW_58 sg13_hv_pmos L=10u W=32u
+MBPF_M26a OUT BPF.PB4 VDD NW_58 sg13_hv_pmos L=10u W=20u
+MBPF_M26b OUT BPF.PB4 VDD NW_65 sg13_hv_pmos L=10u W=20u
+MBPF_M26c OUT BPF.PB4 VDD NW_58 sg13_hv_pmos L=10u W=20u
+MBPF_M21 BPF.D1 BPF.NM2 BPF.TAIL NW_68 sg13_hv_pmos L=2u W=10u
+MBPF_M22 BPF.X VREF BPF.TAIL NW_68 sg13_hv_pmos L=2u W=10u
+MBPF_SWA BPF.NM2 RSTB BPF.MID4 NW_72 sg13_hv_pmos L=1u W=1u
+MBPF_SWC BPF.MID4 RST VREF NW_72 sg13_hv_pmos L=1u W=1u
+MBPF_PRa1 BPF.PM1 BPF.PM1 BPF.NM2 NW_76 sg13_hv_pmos L=4u W=1u
+MBPF_PRb1 BPF.PM1 BPF.PM1 BPF.M1 NW_80 sg13_hv_pmos L=4u W=1u
+MBPF_PRa2 BPF.PM2 BPF.PM2 BPF.M1 NW_80 sg13_hv_pmos L=4u W=1u
+MBPF_PRb2 BPF.PM2 BPF.PM2 BPF.M2 NW_89 sg13_hv_pmos L=4u W=1u
+MBPF_PRa3 BPF.PM3 BPF.PM3 BPF.M2 NW_89 sg13_hv_pmos L=4u W=1u
+MBPF_PRb3 BPF.PM3 BPF.PM3 BPF.M3 NW_94 sg13_hv_pmos L=4u W=1u
+MBPF_PRa4 BPF.PM4 BPF.PM4 BPF.M3 NW_94 sg13_hv_pmos L=4u W=1u
+MBPF_PRb4 BPF.PM4 BPF.PM4 OUT NW_116 sg13_hv_pmos L=4u W=1u
+CBPF_CC BPF.X OUT cap_cmim w=26u l=26u m=15
+CBPF_C1 BPF.NM2 OUT1 cap_cmim w=26u l=26u m=5
+CBPF_C2 BPF.NM2 OUT cap_cmim w=26u l=26u m=1
+RNT0 VDD NW_47 ntap1 A=36.792p P=245.28u
+RNT1 VDD NW_49 ntap1 A=73.956p P=493.04u
+RNT2 VDD NW_52 ntap1 A=67.212p P=448.08u
+RNT3 VDD NW_56 ntap1 A=11.844p P=78.96u
+RNT4 VDD NW_58 ntap1 A=82.392p P=549.28u
+RNT5 LNA.TAIL NW_59 ntap1 A=82.032p P=546.88u
+RNT6 VDD NW_65 ntap1 A=42.156p P=281.04u
+RNT7 VREF NW_67 ntap1 A=24.3p P=162u
+RNT8 BPF.TAIL NW_68 ntap1 A=18.996p P=126.64u
+RNT9 LNA.NP NW_71 ntap1 A=13.644p P=90.96u
+RNT10 VREF NW_72 ntap1 A=15.396p P=102.64u
+RNT11 LNA.NM NW_74 ntap1 A=13.644p P=90.96u
+RNT12 BPF.NM2 NW_76 ntap1 A=13.644p P=90.96u
+RNT13 OUT1 NW_78 ntap1 A=13.644p P=90.96u
+RNT14 BPF.M1 NW_80 ntap1 A=18.996p P=126.64u
+RNT15 BPF.M2 NW_89 ntap1 A=18.996p P=126.64u
+RNT16 VDD NW_93 ntap1 A=60.84p P=405.6u
+RNT17 BPF.M3 NW_94 ntap1 A=18.996p P=126.64u
+RNT18 OUT NW_116 ntap1 A=13.644p P=90.96u
+.ENDS unse316
+.SUBCKT OPA0316 inn inp iovdd iovss out rset rst vdd vref vss
+XCORE inp inn out vref rst rset vdd vss SUBX unse316
+XI1 vdd vss iovdd iovss SUBX sg13g2_Corner
+XI2 vdd vss iovdd iovss SUBX sg13g2_Corner
+XI3 vdd vss iovdd iovss SUBX sg13g2_Corner
+XI4 vdd vss iovdd iovss SUBX sg13g2_Corner
+XI5 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI6 vdd vss iovdd iovss SUBX sg13g2_Filler1000
+XI7 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI8 vdd vss iovdd iovss SUBX sg13g2_Filler200
+XI9 vdd vss iovdd iovss SUBX sg13g2_IOPadVss
+XI10 vdd vss iovdd iovss SUBX sg13g2_IOPadVdd
+XI11 rst padres_11 vdd vss iovdd iovss SUBX sg13g2_IOPadAnalog
+XI12 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI13 vdd vss iovdd iovss SUBX sg13g2_Filler1000
+XI14 vdd vss iovdd iovss SUBX sg13g2_Filler200
+XI15 out padres_15 vdd vss iovdd iovss SUBX sg13g2_IOPadAnalog
+XI16 vref padres_16 vdd vss iovdd iovss SUBX sg13g2_IOPadAnalog
+XI17 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI18 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI19 vdd vss iovdd iovss SUBX sg13g2_Filler1000
+XI20 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI21 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI22 rset padres_22 vdd vss iovdd iovss SUBX sg13g2_IOPadAnalog
+XI23 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI24 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI25 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI26 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI27 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI28 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI29 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI30 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI31 vdd vss iovdd iovss SUBX sg13g2_Filler200
+XI32 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI33 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI34 vdd vss iovdd iovss SUBX sg13g2_Filler1000
+XI35 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI36 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI37 inn padres_37 vdd vss iovdd iovss SUBX sg13g2_IOPadAnalog
+XI38 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI39 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI40 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI41 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI42 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI43 vdd vss iovdd iovss SUBX sg13g2_Filler200
+XI44 inp padres_44 vdd vss iovdd iovss SUBX sg13g2_IOPadAnalog
+XI45 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI46 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI47 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI48 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI49 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI50 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI51 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI52 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI53 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI54 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI55 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI56 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI57 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI58 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI59 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI60 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI61 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI62 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI63 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI64 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI65 vdd vss iovdd iovss SUBX sg13g2_Filler200
+XI66 vdd vss iovdd iovss SUBX sg13g2_IOPadIOVss
+XI67 vdd vss iovdd iovss SUBX sg13g2_IOPadIOVdd
+XI68 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI69 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI70 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI71 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI72 vdd vss iovdd iovss SUBX sg13g2_Filler2000
+XI73 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI74 vdd vss iovdd iovss SUBX sg13g2_Filler400
+XI75 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI76 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI77 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI78 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI79 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI80 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI81 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI82 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI83 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI84 vdd vss iovdd iovss SUBX sg13g2_Filler10000
+XI85 vdd vss iovdd iovss SUBX sg13g2_Filler4000
+XI86 vdd vss iovdd iovss SUBX sg13g2_Filler1000
+XI87 vdd vss iovdd iovss SUBX sg13g2_Filler400
+RPTC0 iovss SUBX ptap1 A=36.9408p P=23789.1u
+RPTC1 vss SUBX ptap1 A=243.046p P=6749.05u
+.ENDS OPA0316
+.END

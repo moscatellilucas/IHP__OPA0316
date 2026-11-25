@@ -1,0 +1,10 @@
+25-Nov-2026 15:08:38 | INFO    | KLayout version detected: 0.30.14 (required >= 0.30.5)
+25-Nov-2026 15:08:38 | INFO    | Minimum DRC: running the minimum rule set only (extra, offgrid, angle, antenna and density sanity checks disabled).
+25-Nov-2026 15:08:38 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+25-Nov-2026 15:08:38 | INFO    | Running IHP-SG13G2 main checks on design /foss/designs/entrega/IHP__OPA0316/release/v.1.0.0/gds/OPA0316.gds, topcell: OPA0316
+25-Nov-2026 15:09:29 | INFO    | Running IHP-SG13G2 density checks on design /foss/designs/entrega/IHP__OPA0316/release/v.1.0.0/gds/OPA0316.gds, topcell: OPA0316
+25-Nov-2026 15:09:39 | INFO    | Completed running Density checks.
+25-Nov-2026 15:09:39 | INFO    | =====================================================================================
+25-Nov-2026 15:09:39 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+25-Nov-2026 15:09:39 | INFO    | =====================================================================================
+25-Nov-2026 15:09:39 | INFO    | Total DRC Run time: 61.41 seconds (including execution, analysis, and reporting)
